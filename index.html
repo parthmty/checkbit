@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/" target="_blank" />
+    <!-- base url for all relative links -->
+    <!-- base target for all links -->
+    <!-- open graph tags do not work with base tag -->
+
+    <title>The Page Title</title>
+    <!-- limit to 60 characters -->
+
+    <meta charset="utf-8" />
+    <!-- Sets the character encoding for the page to utf-8 -->
+    <!-- UTF-8 is the only valid encoding for html5 documents -->
+    <!-- Must be present within first 1024 bytes of the document i.e. must be put before any other head tags -->
+
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+    <!-- used to tell IE browsers to use latest Document Mode -->
+    <!-- Force IE 8/9/10 to use its latest rendering engine -->
+
+    <meta http-equiv="default-style" content="black" />
+    <!-- Sets the default style sheet for the page to linked stylesheet with title black -->
+
+    <meta http-equiv="content-security-policy" content="img-src 'self';" />
+    <!-- used to set some security rules like restricting origin of various resources -->
+
+    <!-- <meta http-equiv="refresh" content="5; url=http://www.google.com" /> -->
+    <!-- After 5 seconds redirect to google.com or if url is not specified then refresh the page -->
+
+    <!-- Viewport -->
+
+    <meta name="viewport" content="width=100" />
+    <!-- Sets the viewport to the device width and initial scale to 1.0 -->
+    <!-- Must be present within first 1024 bytes of the document i.e. must be put before any other head tags -->
+    <!-- viewport-fit=cover is used to make the viewport cover the entire screen like in fullscreen mode ignoring the notch -->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name -->
+
+    <!-- ------------- Metadata or Extra Information for Useragent ------------- -->
+
+    <!-- General -->
+    <meta name="author" content="Author's Name" />
+    <!-- Author of the page -->
+    <!-- Can be used to specify multiple authors by separating them with a comma -->
+
+    <meta name="description" content="Description of the page" />
+    <!-- Description of the page -->
+    <!-- Used by search engines to display a description of the page in search results -->
+    <!-- Should be less than 160 characters as it is generally the maximum length that search engines display -->
+
+    <meta name="generator" content="Generator's Name" />
+    <!-- Name of the software used to generate the page -->
+
+    <meta name="keywords" content="keyword1, keyword2, keyword3" />
+    <!-- Keywords that describe the page -->
+    <!-- May be used by search engines -->
+
+    <meta name="referrer" content="no-referrer" />
+    <!-- Used to specify the content of the Referer header when a request is made from the page -->
+    <!-- Referer header identifies the address from where the current page is visited-->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name -->
+
+    <meta name="theme-color" content="#000000" />
+    <!-- Used to specify the color used by the browser to modify its UI to match the page -->
+    <!-- used by Chrome for the address bar, tab strip and toolbar -->
+    <!-- media queries can be used to specify different colors for different devices like below -->
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="#ffffff"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#000000"
+    />
+
+    <meta name="color-scheme" content="light dark" />
+    <!-- usually used to specify the color scheme of useragent's default style sheet -->
+    <!-- the above line specifies that the useragent's default style sheet is light but can be switched to dark if the user prefers dark mode -->
+
+    <!-- FOR BOTS AND CRAWLERS (SEARCH ENGINE) -->
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="all" />
+    <!-- index, follow - tells the bot to index the page and follow links on the page -->
+    <!-- prefer to use robots.txt instead of meta tags -->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name -->
+
+    <!-- ------------------------------ FOR APPS ------------------------------- -->
+
+    <meta name="application-name" content="My App" />
+    <!-- Sets the name of the application -->
+
+    <!-- ------------------------------- IGNORE -------------------------------- -->
+
+    <link rel="stylesheet" title="black" href="black.css" />
+    <link rel="stylesheet" title="blue" href="blue.css" />
+  </head>
+  <body>
+    <img src="https://unsplash.it/640" alt="#" />
+  </body>
+</html>
